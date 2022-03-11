@@ -1,0 +1,163 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .brand-logo{
+    margin-left: 5px;
+}
+.container{
+    width: 90%;
+}
+
+
+nav {z-index: 3;}
+header {z-index: 2;}
+#nav-bg {z-index: 1;}
+
+
+body {
+  background: white;
+}
+nav {
+	position: fixed;
+    top: 0;
+    font-weight: bold;
+}
+
+header{
+    position: relative;
+    background-color: black;
+	padding: 1em;
+	height: 100vh;
+}
+header:before {
+		content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+		background-image: url("/assets/woman-wearing-bathing-suit-color-year-2022.jpg");
+  	    background-size: cover;
+		background-repeat: no-repeat;
+        background-position: 65% 50%;
+		opacity: 0.4;
+
+}
+#nav-bg {
+    background: #7e57c2;
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+
+
+header h1 {
+	font-size: 4em;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight:800;
+	padding-top: 30vh;
+
+    -webkit-animation: floating-text 2s ease alternate infinite;
+    -moz-animation: floating-text 2s ease alternate infinite;
+     -ms-animation: floating-text 2s ease alternate infinite;
+      -o-animation: floating-text 2s ease alternate infinite;
+         animation: floating-text 2s ease alternate infinite;
+
+}
+
+@-webkit-keyframes floating-text {
+    0% {
+      -webkit-transform: translateY(.1em);
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .3em .2em rgba(0,0,0,.3);
+
+    }
+    100% {
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .5em .5em rgba(0,0,0,.3);
+    }
+  }
+  @-moz-keyframes floating-text {
+    0% {
+      -moz-transform: translateY(.1em);
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .3em .2em rgba(0,0,0,.3);
+
+    }
+    100% {
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .5em .5em rgba(0,0,0,.3);
+    }
+  }
+  @-ms-keyframes floating-text {
+    0% {
+      -ms-transform: translateY(.1em);
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .3em .2em rgba(0,0,0,.3);
+
+    }
+    100% {
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .5em .5em rgba(0,0,0,.3);
+    }
+  }
+  @-o-keyframes floating-text {
+    0% {
+      -o-transform: translateY(.1em);
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .3em .2em rgba(0,0,0,.3);
+
+    }
+    100% {
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .5em .5em rgba(0,0,0,.3);
+    }
+  }
+  @keyframes floating-text {
+    0% {
+      transform: translateY(.1em);
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .3em .2em rgba(0,0,0,.3);
+
+    }
+    100% {
+      text-shadow:0 0 .5em rgba(255,255,255,.4),
+        0 0 .2em rgba(0,0,0,.3),
+        0 .5em .5em rgba(0,0,0,.3);
+    }
+  }
+
+
+header p {
+	text-align: center;
+	font-size: 2em;
+	font-weight: 300;
+}

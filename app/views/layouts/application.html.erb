@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Debasish Mohanta</title>
+    <meta name="description" content="Software Development student of LPU" />
+
+    <meta property="og:title" content="Debasish Mohanta" />
+    <meta property="og:description" content="A Software Development student of Lovely Professional University" />
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/79389001?v=4" />
+
+    <meta name="twitter:title" content="Debasish Mohanta">
+    <meta name="twitter:description" content="A Software Development student of Lovely Professional University">
+    <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/79389001?v=4">
+
+    <meta itemprop="name" content="Debasish Mohanta">
+    <meta itemprop="description" content="A Software Development student of Lovely Professional University">
+    <meta itemprop="image" content="https://avatars.githubusercontent.com/u/79389001?v=4">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag "favicon.ico" %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+
+        var mixer = mixitup(containerEl);
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.fixed-action-btn').floatingActionButton();
+	          $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+  </body>
+</html>

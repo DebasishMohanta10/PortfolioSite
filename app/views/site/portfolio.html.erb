@@ -1,0 +1,213 @@
+<style media="screen">
+  *,
+  *:before,
+  *:after {
+      box-sizing: border-box;
+  }
+
+  /* Controls
+  ---------------------------------------------------------------------- */
+
+
+  .control {
+      position: relative;
+  }
+
+
+
+
+
+
+  /* Container
+  ---------------------------------------------------------------------- */
+
+  .container {
+      text-align: justify;
+  }
+
+  .container:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+  }
+
+  /* Target Elements
+  ---------------------------------------------------------------------- */
+
+  .mix,
+  .gap {
+      display: inline-block;
+      vertical-align: top;
+  }
+
+
+
+  /* Grid Breakpoints
+  ---------------------------------------------------------------------- */
+
+  /* 2 Columns */
+
+  .mix,
+  .gap {
+      width: calc(100%/2 - (((2 - 1) * 1rem) / 2));
+  }
+
+  /* 3 Columns */
+
+  @media screen and (min-width: 541px) {
+      .mix,
+      .gap {
+          width: calc(100%/3 - (((3 - 1) * 1rem) / 3));
+      }
+  }
+
+  /* 4 Columns */
+
+  @media screen and (min-width: 961px) {
+      .mix,
+      .gap {
+          width: calc(100%/4 - (((4 - 1) * 1rem) / 4));
+      }
+  }
+
+</style>
+        <div class="section">
+            <h3 class="center black-text" style="font-weight: 900;">My <span class="deep-purple-text">Portfolio</span></h3>
+            <div class="divider red" style="width:100px;margin:0 auto;"></div>
+        </div>
+        <div class="controls center section">
+            <button type="button" class="control btn deep-purple" data-filter="all">All</button>
+            <button type="button" class="control btn deep-purple" data-filter=".html">HTML/CSS</button>
+            <button type="button" class="control btn deep-purple" data-filter=".vue">Vue</button>
+            <button type="button" class="control btn deep-purple" data-filter=".javascript">JavaScript</button>
+            <button type="button" class="control btn deep-purple" data-filter=".jquery">jQuery</button>
+            <button type="button" class="control btn deep-purple" data-filter=".rails">Rails</button>
+        </div>
+
+        <div class="container section">
+            <div class="mix html jquery rails">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/mycvsite1.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,js,Ruby</p>
+                      <p>Framework: MaterializeCSS,rails,jquery</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html rails jquery">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/mycvsite2.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,js,Ruby</p>
+                      <p>Framework: MaterializeCSS,rails,jquery</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html jquery rails">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/bassmusiccodecademyproject.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,js,Ruby</p>
+                      <p>Framework:<br> Bootstrap5,rails,jquery</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html jquery">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/vacationdestination.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,js</p>
+                      <p>Framework:<br> jquery</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html javascript">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/kmtomile.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,js</p>
+                      <p>Framework:<br> Bootstrap</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html jquery rails">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/quizme.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,js,Ruby</p>
+                      <p>Framework: MaterializeCSS,rails,jquery</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html javascript rails">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/innovationcloudcodecademyproject.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,js,Ruby</p>
+                      <p>Framework:<br> Bootstrap 5,rails,jquery</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mix html vue">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="/assets/vuecart.png" alt="" class="responsive-img">
+                    </div>
+                    <div class="card-content center black-text">
+                      <p>Languages: html,css,vue</p>
+                      <p>Framework:<br> Vue</p>
+                    </div>
+                    <div class="card-action center">
+                        <a href="" class="btn deep-purple">Explore</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="gap"></div>
+            <div class="gap"></div>
+            <div class="gap"></div>
+        </div>
